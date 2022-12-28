@@ -1,0 +1,20 @@
+{
+  "comeponentTitle": "BannerSwiper",
+  "componentData": [
+    {
+      "id": 1,
+      "price": 90,
+      "imgUrl": "https://images.pexels.com/photos/2994100/pexels-photo-2994100.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+    },
+    {
+      "id": 2,
+      "price": 90,
+      "imgUrl": "https://images.pexels.com/photos/2905238/pexels-photo-2905238.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+    },
+    {
+      "id": 3,
+      "price": 100,
+      "imgUrl": "https://images.pexels.com/photos/3155047/pexels-photo-3155047.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+    }
+  ]
+}

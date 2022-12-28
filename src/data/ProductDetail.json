@@ -1,0 +1,29 @@
+{
+  "comeponentTitle": "ProductDetail",
+  "componentData": [
+    {
+      "id": 1,
+      "name": "Su Geçirmez Siyah Çanta",
+      "price": 70,
+      "description": "Su Geçirmez Siyah Çanta Çok Nicedir",
+      "imgUrl": "https://images.pexels.com/photos/2994100/pexels-photo-2994100.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+      "stockQuantity": 5
+    },
+    {
+      "id": 2,
+      "name": "Mavi Sirt Çantasi",
+      "price": 90,
+      "description": "Mavi Sirt Çantasi Çok Güzeldir",
+      "imgUrl": "https://images.pexels.com/photos/2905238/pexels-photo-2905238.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+      "stockQuantity": 2
+    },
+    {
+      "id": 3,
+      "name": "Deri Dag Çantasi",
+      "price": 100,
+      "description": "Deri Dag Çantasi Çok Hojdur",
+      "imgUrl": "https://images.pexels.com/photos/3155047/pexels-photo-3155047.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+      "stockQuantity": 0
+    }
+  ]
+}
