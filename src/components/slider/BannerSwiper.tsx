@@ -19,7 +19,7 @@ const BannerSwiper = () => {
   ) : (
     <View>
       <FlatList
-        data={swiperComponentData!.componentData}
+        data={swiperComponentData?.componentData}
         renderItem={({ item }) => <ProductSwiper item={item} />}
         horizontal
         pagingEnabled

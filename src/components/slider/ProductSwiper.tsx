@@ -11,18 +11,20 @@ import React from "react";
 import { ISwiperProductItem } from "../../models/swiper";
 import { useNavigation } from "@react-navigation/native";
 
-export interface IProductSwiperProps {
+interface IProductSwiperProps {
   item: ISwiperProductItem;
 }
-type TNavigation = {
+
+interface INavigation {
   navigate: (value: string, {}) => void;
-};
+}
+
 const { width, height } = Dimensions.get("screen");
 
 const ProductSwiper: React.FC<IProductSwiperProps> = (props) => {
   const translateYImage = new Animated.Value(40);
   const { id, imgUrl, price } = props.item;
-  const { navigate } = useNavigation<TNavigation>();
+  const { navigate } = useNavigation<INavigation>();
   Animated.timing(translateYImage, {
     toValue: 0,
     duration: 1000,
@@ -37,7 +39,7 @@ const ProductSwiper: React.FC<IProductSwiperProps> = (props) => {
           navigate("ProductDetail", { id });
         }}
       >
-        <View style={{ height: "100%", width: "90%" }}>
+        <View style={styles.imageContainer}>
           <Animated.Image
             source={{ uri: imgUrl }}
             resizeMode="contain"
@@ -64,10 +66,12 @@ const styles = StyleSheet.create({
     height,
     alignItems: "center",
   },
+  imageContainer: { height: "100%", width: "90%" },
   image: {
     flex: 0.7,
     width: "100%",
   },
+
   content: {
     flex: 0.4,
     alignItems: "center",

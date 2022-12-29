@@ -5,5 +5,5 @@ export interface ISwiperProductItem {
 }
 export interface ISwiperData {
   componentTitle: string;
-  componentData: [ISwiperProductItem];
+  componentData: ISwiperProductItem[];
 }

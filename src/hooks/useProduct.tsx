@@ -1,10 +1,9 @@
 import axios from "axios";
 import { useState } from "react";
-import Constants from "expo-constants";
 
 import { IProductItem } from "../models/product";
 import { ISwiperData } from "../models/swiper";
-
+import { baseURL } from "../service/Constants";
 interface IUseProduct {
   getProductDetailData: (routeId: number) => Promise<void>;
   getSwiperComponentData: () => Promise<void>;
@@ -12,9 +11,6 @@ interface IUseProduct {
   swiperComponentData: ISwiperData | undefined;
 }
 const useProduct = (): IUseProduct => {
-  const { manifest } = Constants;
-  const baseURL =
-    "http://192.168.1.102:" + manifest?.debuggerHost?.split(":")[1];
   const [productDetailData, setProductDetailData] = useState<
     IProductItem | undefined
   >();
